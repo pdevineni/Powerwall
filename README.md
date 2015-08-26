@@ -7,6 +7,6 @@ Pravallika Devineni, Danai Koutra, Michalis Faloutsos, Christos Faloutsos
 
 Run the code using the MATLAB function: 
 
-[slope, rsquare] = powerwall(x) 
+		[slope, rsquare] = powerwall(x) 
 
 Where x is the one-dimensional discrete random variable. 
