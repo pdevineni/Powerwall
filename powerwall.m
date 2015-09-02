@@ -26,6 +26,7 @@ myXaxis = xaxis(1:length(xaxis)-1);
 
 % Plot OddsRatio data
 plot(myXaxis, myYaxis, 'r.', 'MarkerSize', 10);
+hold on 
 
 % Fit log-logistic OddsRatio
 p = polyfit(myXaxis, myYaxis, 1);
@@ -35,6 +36,7 @@ plot(myXaxis, fitted, 'b-', 'LineWidth', 2);
 xlabel('log(x)');
 ylabel('log(odds)');
 title('Odds Ratio of x with Log-logistic fit');
+hold off 
 
 % computing R^2
 rsq = rsquare(myXaxis, myYaxis, p);
